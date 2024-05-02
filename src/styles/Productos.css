@@ -1,0 +1,26 @@
+.producto-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Agrega un borde gris */
+    padding: 10px; /* Agrega un espacio interno */
+    transition: background-color 0.3s ease; /* Agrega una transición suave al cambio de color */
+  }
+  
+  .producto-container:hover {
+    background-color: #f5f5f5; 
+  }
+  
+  .producto-imagen {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+  }
+  
+  .producto-detalles {
+    flex: 1;
+  }
+  
+  .producto-detalles h3 {
+    margin-top: 0;
+  }

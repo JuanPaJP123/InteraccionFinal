@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.navbar {
+    background-color: #ff9900; /* Código hexadecimal para el color naranja */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+  }
