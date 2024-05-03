@@ -1,22 +1,24 @@
-import { Link } from 'react-router-dom'; // Importa Link desde React Router
+import { Link } from 'react-router-dom';
 import '../styles/Header.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Importa FontAwesomeIcon desde Font Awesome
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'; // Importa el icono del carrito de Font Awesome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
   return (
     <>
-      <div className="header">
+      <div className="header fixed top-0 left-0 w-full bg-gray-800 text-white z-10">
         <div className="logo">
-          {/* Aquí puedes colocar una imagen o un texto para el logo */}
-          <img src="ruta/hacia/tu/logo.png" alt="Logo" />
+          <img src="https://i.pinimg.com/736x/a2/31/ee/a231ee44a8d3d6fda400428449191ffb.jpg" alt="Logo" />
         </div>
-        <h1 className="Titulo">SOLUCIONES EN IMPRESIONES</h1>
+        <h1 className="Titulo text-3xl font-bold">SOLUCIONES EN IMPRESIONES</h1>
         <div className="Carrito">
           <Link to="/carrito">
             <FontAwesomeIcon icon={faShoppingCart} className='text-white h-6' />
           </Link>
         </div>
+      </div>
+      <div className="mt-16">
+        {/* Este div crea un espacio para evitar que el contenido se solape con el encabezado */}
       </div>
     </>
   );

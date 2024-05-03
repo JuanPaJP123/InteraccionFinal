@@ -33,7 +33,7 @@ export default function Carrusel() {
       <Slider {...settings}>
         <div>
           <img
-            src="https://supercolor.com.co/wp-content/uploads/2019/12/blog-35-35.jpg"
+            src="https://images.template.net/wp-content/uploads/2016/11/15120131/Androll-Product-Sale-Banner.jpg"
             alt="Carrusel"
             className="carrusel-image"
           />

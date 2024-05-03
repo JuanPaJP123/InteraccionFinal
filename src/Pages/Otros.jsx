@@ -1,17 +1,16 @@
-import Productos from "../components/Productos";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import Navbar from "../components/navbar";
-import { CarritoProvider } from "../context/CarritoContext";
+import OtroComponente from "../components/OtroComponente";
 
-function PaginaPrincipal() {
+function Otros() {
   return (
     <div>
       <Header />
       <Navbar />
-        <Productos />
+      <OtroComponente/>
       <Footer />
     </div>
   );
 }
-export default PaginaPrincipal;
+export default Otros;

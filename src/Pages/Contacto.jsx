@@ -2,16 +2,16 @@ import Productos from "../components/Productos";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import Navbar from "../components/navbar";
-import { CarritoProvider } from "../context/CarritoContext";
+import ContactoComponente from "../components/Contacto";
 
-function PaginaPrincipal() {
+function Contacto() {
   return (
     <div>
       <Header />
       <Navbar />
-        <Productos />
+      <ContactoComponente/>
       <Footer />
     </div>
   );
 }
-export default PaginaPrincipal;
+export default Contacto;
