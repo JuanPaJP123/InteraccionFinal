@@ -33,7 +33,7 @@ export default function Carrusel() {
       <Slider {...settings}>
         <div>
           <img
-            src="https://images.template.net/wp-content/uploads/2016/11/15120131/Androll-Product-Sale-Banner.jpg"
+            src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ee4cc950700333.58d7586f2d6e8.png"
             alt="Carrusel"
             className="carrusel-image"
           />

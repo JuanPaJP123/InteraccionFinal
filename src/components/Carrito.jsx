@@ -1,6 +1,8 @@
 // Carrito.jsx
 import { useContext, useState } from 'react';
 import { CarritoContext } from "../context/CarritoContext.jsx";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Carrito() {
   const { carrito, eliminarProducto } = useContext(CarritoContext);
@@ -71,6 +73,7 @@ function Carrito() {
           Comprar
         </button>
       </div>
+      <ToastContainer/>
     </div>
   );
 }

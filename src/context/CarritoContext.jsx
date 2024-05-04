@@ -1,5 +1,7 @@
 // CarritoContext.jsx
 import React, { createContext, useState, useEffect } from 'react';
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const CarritoContext = createContext();
 
@@ -22,6 +24,7 @@ export const CarritoProvider = ({ children }) => {
   // Función para eliminar un producto del carrito
   const eliminarProducto = (id) => {
     setCarrito(carrito.filter((producto) => producto.id !== id));
+    toast.error("Producto eliminado")
   };
 
   return (

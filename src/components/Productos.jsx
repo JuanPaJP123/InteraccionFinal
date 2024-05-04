@@ -4,6 +4,9 @@ import '../styles/Productos.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'; 
 import { CarritoContext } from "../context/CarritoContext.jsx"
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import GetRopa from '../Api/api.jsx'; 
 
 export default function Productos() {
   const [data, setData] = useState([]);
@@ -12,9 +15,8 @@ export default function Productos() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const api = 'https://fakestoreapi.com/products';
-        const response = await axios.get(api);
-        setData(response.data);
+        const response = await GetRopa();
+        setData(response);
       } catch (error) {
         console.log(error);
       }
@@ -27,7 +29,7 @@ export default function Productos() {
     const nuevoCarrito = [...carrito, producto];
     // Actualiza el estado del carrito en el contexto
     setCarrito(nuevoCarrito);
-    console.log(carrito);
+    toast.success("Producto Agregado al carrito")
   };
 
   return (
@@ -46,6 +48,7 @@ export default function Productos() {
             </button>
         </div>
       ))}
+      <ToastContainer/>
     </div>
   );
 }

@@ -8,9 +8,9 @@ const Header = () => {
     <>
       <div className="header fixed top-0 left-0 w-full bg-gray-800 text-white z-10">
         <div className="logo">
-          <img src="https://i.pinimg.com/736x/a2/31/ee/a231ee44a8d3d6fda400428449191ffb.jpg" alt="Logo" />
+          <img src="https://th.bing.com/th/id/R.89ea81e1906d12b4390b0b70f39aa471?rik=vo5XhGN1MP7QFg&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fpng-logo-design-design-png-hd-1250.png&ehk=PTSp6EHLbcJ%2fFkzlJhFcSV%2bI5RPa9H2nw8A4XjQ3ulA%3d&risl=&pid=ImgRaw&r=0" alt="Logo" />
         </div>
-        <h1 className="Titulo text-3xl font-bold">SOLUCIONES EN IMPRESIONES</h1>
+        <h1 className="Titulo text-md lg:text-4xl font-bold uppercase">tienda de ropa y accesorios</h1>
         <div className="Carrito">
           <Link to="/carrito">
             <FontAwesomeIcon icon={faShoppingCart} className='text-white h-6' />
