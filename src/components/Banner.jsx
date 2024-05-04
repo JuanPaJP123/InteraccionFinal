@@ -53,7 +53,7 @@ export default function Banner() {
             />
             <div className="absolute inset-0 flex flex-col items-start justify-center mx-14 my-5 mb-1">
             
-            <span className="text-white text-6xl font-bold my-5">Joyeria</span>
+            <span className="text-white text-4xl  lg:text-6xl font-bold my-5">Joyeria</span>
   
                 <span className="bg-orange-400 text-white text-xl rounded-md font-bold px-11 py-1 mb-4 uppercase">
                   Catalogo
@@ -68,7 +68,7 @@ export default function Banner() {
             />
              <div className="absolute inset-0 flex flex-col items-start justify-center mx-14 my-5 mb-1">
             
-            <span className="text-white text-6xl font-bold my-5">Electronica</span>
+            <span className="text-white text-4xl  lg:text-6xl font-bold my-5">Electronica</span>
   
                 <span className="bg-orange-400 text-white text-xl rounded-md font-bold px-11 py-1 mb-4 uppercase">
                   Catalogo
